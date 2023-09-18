@@ -15,6 +15,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update \
     && mv /var/www /var/www.orig \
     && mkdir /var/www \
     && git clone https://github.com/yeastgenome/yplp-docker.git /var/www \
+    && rm -rf /var/www/html/images /var/www/html/images_sup \
+    && mkdir /var/www/html/images /var/www/html/images_sup \
     && mv /var/www/yplp.conf /etc/apache2/sites-available/ \
     && a2enmod socache_shmcb \
     && a2ensite yplp
