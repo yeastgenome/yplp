@@ -63,7 +63,7 @@ if(($_POST['task'] == 'login') && (isset($_POST['submit'])))
     <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
    <link rel="shortcut icon" href="favicon.ico" type="image/ico">
     <title>YPL+</title>
-    <link rel="stylesheet" type="text/css" href="normal.css" />
+    <link rel="stylesheet" type="text/css" href="/normal.css" />
   </head>
   <body class="hintergrund"> 
 
