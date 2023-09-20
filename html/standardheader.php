@@ -49,10 +49,7 @@ if($ssl_encryption == 'yes')
     <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
     <title>YPL+</title>
     <?php
-    if (isset($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == '443')
       $prefix = 'https';
-    else
-      $prefix = 'http';
     ?>
     <link rel="stylesheet" type="text/css" href="<?php echo($prefix.'://'.$_SERVER['SERVER_NAME'].'/'.PATH.'/'); ?>normal.css" />
   </head>
