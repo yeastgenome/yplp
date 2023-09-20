@@ -63,7 +63,7 @@ if(($_POST['task'] == 'login') && (isset($_POST['submit'])))
     <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
    <link rel="shortcut icon" href="favicon.ico" type="image/ico">
     <title>YPL+</title>
-    $server_name = getenv('SERVER_NAME');
+    $server_name = $_SERVER['SERVER_NAME'];
     <link rel="stylesheet" type="text/css" href="https://{$server_name}/normal.css" />
   </head>
   <body class="hintergrund"> 
